@@ -11,4 +11,3 @@ ports:
 
 vscode:
   extensions:
-    - esbenp.prettier-vscode
