@@ -1,29 +1,31 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Random Card Generator</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-  </head>
-  <body>
-    <div class="container text-center mt-5">
-      <h1>Carta Aleatoria de Poker</h1>
-      <div class="card mt-4" id="carta">
-        <div class="card-body">
-          <span class="valor" id="valorCarta"></span>
-          <span class="icono" id="iconoCarta"></span>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Random Card Generator</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
+    integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous" />
+</head>
+
+<body class="bg-success">
+  <div class="container text-center mt-5">
+    <h1>Random Card Generator</h1>
+    <div class="card mt-4 m-auto display-1" id="carta" style="max-width: 3em;">
+      <div class="row">
+        <div class="col-12 text-start">
+          <p id="iconA"></p>
+        </div>
+        <div class="col-12 text-center">
+          <p id="cardValue"></p>
+
+        </div>
+        <div class="col-12 text-start" style="transform: rotate(180deg);">
+          <p id="iconB"></p>
         </div>
       </div>
-      <button id="btnOtraCarta" class="btn btn-primary mt-3">Dame otra!</button>
     </div>
+    <button id="btnRepeat" class="btn btn-primary mt-3">Give me another one!</button>
+  </div>
 </html>
-
-<!--
-♦ ♥ ♠ ♣
--->
